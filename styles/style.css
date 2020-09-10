@@ -1,5 +1,78 @@
 /* CSS Document */
 *, *::after, *::before {
-  box-sizing:border-box;  
+	padding: 0;
+	margin: 0;
+  	box-sizing:border-box;  
 }
 
+/* header section 1 */
+header section:first-of-type{
+	background-color: #ffc0cb;
+	height: 68px;
+}
+
+/* header section 2 */
+header section:last-of-type{
+	background-color: red;
+	height: 80px;
+}
+
+/* main section 1 */
+main section:first-of-type img{
+	width: 70%;
+	display: block;
+	margin: 0px auto;
+	padding: 8px 0px;
+}
+
+main section:first-of-type ul{
+	display: flex;
+	flex-direction: column;
+}
+
+/* main section 2 */
+main section:nth-of-type(2){
+	background-color: blue;
+}
+
+/* main section 3 */
+main section:nth-of-type(3){
+	background-color: red;
+}
+
+/* main section 4 */
+main section:nth-of-type(4) li{
+	position: relative;
+}
+
+main section:nth-of-type(4) img{
+	width: 100%;
+}
+
+main section:nth-of-type(4) li p{
+	position: absolute;
+  	top: 2.5em;
+  	padding: 0px 80px;
+	font-family: "Helvetica Neue";
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	line-height: 28px;
+	letter-spacing: 1px;
+}
+
+main section:nth-of-type(4) li a button{
+	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: white;
+  	color: #1f313a;
+  	height: 46px;
+  	padding: 12px 10px 10px;
+}
+
+/* main section 5 */
+main section:last-of-type{
+	background-color: red;
+}
