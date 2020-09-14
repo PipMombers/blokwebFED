@@ -5,51 +5,130 @@
   	box-sizing:border-box;  
 }
 
-/* header section 1 */
-header section:first-of-type{
+/* Tekstdeel van de header */
+header{
 	background-color: #ffc0cb;
-	height: 68px;
+	height: 88px;
+	padding: 0px 50px;
 }
 
-/* header section 2 */
-header section:last-of-type{
-	background-color: red;
+header p{
+	font-size: 15px;
+	line-height: 20px;
+	font-family: "Helvetica Neue";
+	font-weight: medium;
+	text-align: center;
+}
+
+header p a{
+	color: black;
+	text-decoration: none;
+	border-bottom: 2px solid black;
+}
+
+/* navigatie */
+nav{
 	height: 80px;
+	margin: 10px;
 }
 
-/* main section 1 */
-main section:first-of-type img{
+nav img{
+	width: 100%;
+	padding-left: left;
+}
+
+nav ul{   
+  list-style:none;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  flex-grow: 1;
+}
+
+/* eerste deel main */
+main ul:first-of-type {
+	display: flex;
+	flex-direction: column;
+}
+
+main ul:first-of-type img{
 	width: 70%;
 	display: block;
 	margin: 0px auto;
 	padding: 8px 0px;
 }
 
-main section:first-of-type ul{
-	display: flex;
-	flex-direction: column;
-}
-
-/* main section 2 */
-main section:nth-of-type(2){
-	background-color: blue;
-}
-
-/* main section 3 */
-main section:nth-of-type(3){
-	background-color: red;
-}
-
-/* main section 4 */
-main section:nth-of-type(4) li{
+main li:first-of-type, main li:nth-of-type(2) {
 	position: relative;
 }
 
-main section:nth-of-type(4) img{
+main li:first-of-type h2, main li:nth-of-type(2) h2{
+	position: absolute;
+	bottom: 4em;
+	color: white;
+	font-family: "Helvetica Neue";
+	font-size: 32px;
+	width: 100%;
+	text-align: center;
+}
+
+main li:first-of-type button, main li:nth-of-type(2) button{
+	position: absolute;
+	bottom: 3em;
+	left: 25%;
+	font-family: "Helvetica Neue";
+	background-color: white;
+	border: none;
+	font-size: 16px;
+	width: 160px;
+	height: 50px;
+	padding: 12px 0px;
+
+}
+
+/* tweede deel main */
+main ul:nth-of-type(2) {
+    overflow: auto;
+    white-space:nowrap;
+    padding: 10px;
+}
+
+main ul:nth-of-type(2) li{
+	display: inline-block;
+	width: 45%;
+	margin: 25px 5px 0 0;
+}
+
+main ul:nth-of-type(2) img{
 	width: 100%;
 }
 
-main section:nth-of-type(4) li p{
+main ul:nth-of-type(2) h3{
+	font-size: 13px;
+	font-family: "Helvetica Neue";
+	font-weight: 400;
+	text-align: center;
+	padding-top: 10px;
+}
+
+
+
+
+/* derde deel main */
+
+
+/* vierde deel main */
+main ul:nth-of-type(3) li{
+	position: relative;
+}
+
+main ul:nth-of-type(3) img{
+	width: 100%;
+}
+
+main ul:nth-of-type(3) li p{
 	position: absolute;
   	top: 1em;
   	padding: 0px 70px;
@@ -62,17 +141,105 @@ main section:nth-of-type(4) li p{
 	letter-spacing: 1px;
 }
 
-main section:nth-of-type(4) li a button{
+main ul:nth-of-type(3) li a button{
 	position: absolute;
-  	top: 0px;
-  	left: 0px;
-  	background-color: white;
-  	color: #1f313a;
-  	height: 46px;
-  	padding: 12px 10px 10px;
+  	bottom: 1em;
+	left: 23%;
+  	font-family: "Helvetica Neue";
+	background-color: white;
+	border: none;
+	font-size: 16px;
+	width: 176px;
+	height: 46px;
+	padding: 12px 0px;
 }
 
-/* main section 5 */
-main section:last-of-type{
-	background-color: red;
+/* laatste deel main */
+main section:last-of-type h1{
+	font-size: 34px;
+	font-family: "Helvetica Neue";
+	font-weight: bold;
+	text-align: center;
+	margin-top: 30px;
 }
+
+main section:last-of-type p{
+	font-size: 20px;
+	font-family: "Helvetica Neue";
+	text-align: center;
+	padding: 20px 16px;
+}
+
+main section:last-of-type a{
+	text-decoration: none;
+}
+
+main section:last-of-type button{
+  	font-family: "Helvetica Neue";
+	background-color: black;
+	color: white;
+	border: none;
+	font-size: 16px;
+	width: 176px;
+	height: 46px;
+	padding: 12px 0px;
+	display: block;
+	margin: 0px auto;
+}
+
+/* footer */
+footer{
+	height: 893px;
+	margin-top:20px;
+}
+
+footer h2{
+	font-size: 24px;
+	font-family: "Helvetica Neue";
+	text-align: center;
+	padding: 0 30px;
+}
+
+footer p{
+	font-size: 16px;
+	font-family: "Helvetica Neue";
+	text-align: center;
+	padding: 0 18px;
+	margin: 20px 0;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+footer button{
+	font-family: "Helvetica Neue";
+	border: 2px solid black;
+	background-color: white;
+	font-size: 16px;
+	width: 176px;
+	height: 46px;
+	padding: 12px 0px;
+	display: block;
+	margin: 0px auto;
+	margin-bottom: 40px;
+}
+
+footer ul li{
+	font-size: 20px;
+	font-family: "Helvetica Neue";
+	font-weight: bold;
+	padding: 10px;
+	width: 90%;
+	display: block;
+	margin: 0px auto;
+}
+
+
+
+
+
+
+
+
+
