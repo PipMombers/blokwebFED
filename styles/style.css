@@ -189,8 +189,8 @@ main section:last-of-type button{
 
 /* footer */
 footer{
-	height: 893px;
 	margin-top:20px;
+	background-color: #ffc0cb;
 }
 
 footer h2{
@@ -198,6 +198,7 @@ footer h2{
 	font-family: "Helvetica Neue";
 	text-align: center;
 	padding: 0 30px;
+	padding-top: 20px;
 }
 
 footer p{

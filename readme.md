@@ -38,15 +38,22 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Position: absolute en Position: relative had ik hiervoor eigenlijk nooit echt goed gebruikt, omdat ik niet goed wist wat het betekende. Dit ging nu vrijwel gelijk goed. 
+
+Wat ik vooral nog heel lastig vind is om alles goed in het midden te positioneren en het dan ook responsive te houden. Nu heb ik een paar dingen nog gecentreerd met left en right maar zodra ik dan de schermgrootte vergroot klopt het niet meer. Sowieso het hele responsive gedeelte vind ik nog heel lastig. 
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent-
+![screenshot(s) van hoe ver je bent](images/voortgang1a.jpg)
+![screenshot(s) van hoe ver je bent](images/voortgang1b.jpg)
+![screenshot(s) van hoe ver je bent](images/voortgang1c.jpg)
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+- Het responsive gedeelte
+- Teksten en foto's goed centreren (dus horizontaal en verticaal)
+- Hoe gebruik je maar 1 css bestand als je werkt met nth-of-type
+- De afbeeldingen in mijn navigatiebalk goed zetten
 
 ### Verslag van meeting
 
