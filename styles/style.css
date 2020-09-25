@@ -8,8 +8,7 @@
 /* Tekstdeel van de header */
 header{
 	background-color: #ffc0cb;
-	height: 88px;
-	padding: 0px 50px;
+	padding: 10px 50px;
 }
 
 header p{
@@ -155,7 +154,7 @@ main ul:nth-of-type(3) li a button{
 }
 
 /* laatste deel main */
-main section:last-of-type h1{
+main section:last-of-type h2{
 	font-size: 34px;
 	font-family: "Helvetica Neue";
 	font-weight: bold;
@@ -186,6 +185,21 @@ main section:last-of-type button{
 	display: block;
 	margin: 0px auto;
 }
+
+main section:last-of-type .gridwrapper{
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-auto-rows: 135px;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 15px 8px;
+	padding-bottom: 40px ;
+}
+
+main .gridwrapper img{
+	width: 100%;
+}
+
 
 /* footer */
 footer{
@@ -235,6 +249,29 @@ footer ul li{
 	display: block;
 	margin: 0px auto;
 }
+
+
+
+/* 2e pagina */
+
+.mainproductpagina img{
+	width: 100%;
+	padding: 20px;
+	margin-top: -40px;
+}
+
+.mainproductpagina h2{
+	font-family: "Helvetica Neue";
+	font-size: 1.2em;
+	margin-left: 10px;
+}
+
+.mainproductpagina h2:nth-of-type(2){
+	font-weight: normal;
+}
+
+
+
 
 
 

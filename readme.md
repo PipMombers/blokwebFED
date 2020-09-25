@@ -57,7 +57,13 @@ Wat ik vooral nog heel lastig vind is om alles goed in het midden te positionere
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+Om de buttons en andere dingen beter te centreren heb ik als advies gekregen om display: flex; op de "wrapper" van de elementen te zetten en dan vervolgens justify-content: center; gebruiken om alles in het midden te kunnen zetten. En verder kan ik beter de afbeeldingen als background-image gebruiken dus daar ga ik ook naar kijken. 
+
+De navigatie kan ik beter verdelen in groepjes. Dus de elementen die meer aan de linkerkant staan in een andere groep zetten als de elementen die aan de rechtkant staan. Zo kan ik het beter positioneren. 
+
+Het responsive gedeelte wordt blijkbaar nog in de les besproken dus dat heb ik voor nu nog maar even gelaten. 
+
+En verder moet ik nog gaan kijken naar waar ik Javascript wil gaan toepassen, dat was ik voor de voortgang even vergeten ;). 
 
 
 
