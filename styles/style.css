@@ -47,23 +47,31 @@ nav li {
 }
 
 /* eerste deel main */
-main ul:first-of-type {
-	display: flex;
-	flex-direction: column;
+/* bron afbeeldingen: https://www.monki.com/en_eur/index.html */
+
+#homepagina main ul:first-of-type li:first-of-type div{
+	width: 100%;
+	height: 360px;
+	background-image: url(../images/monkifoto_1.jpg);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+
 }
 
-main ul:first-of-type img{
-	width: 70%;
-	display: block;
-	margin: 0px auto;
-	padding: 8px 0px;
-}
-
-main li:first-of-type, main li:nth-of-type(2) {
+#homepagina main ul:first-of-type li:last-of-type div{
+	width: 100%;
+	height: 360px;
+	background-image: url(../images/monkifoto_2.jpg);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
 	position: relative;
 }
 
-main li:first-of-type h2, main li:nth-of-type(2) h2{
+
+#homepagina main li:first-of-type h2, .knitwear {
 	position: absolute;
 	bottom: 4em;
 	color: white;
@@ -73,10 +81,7 @@ main li:first-of-type h2, main li:nth-of-type(2) h2{
 	text-align: center;
 }
 
-main li:first-of-type button, main li:nth-of-type(2) button{
-	position: absolute;
-	bottom: 3em;
-	left: 25%;
+#homepagina main li:first-of-type button, .shopbutton{
 	font-family: "Helvetica Neue";
 	background-color: white;
 	border: none;
@@ -84,27 +89,34 @@ main li:first-of-type button, main li:nth-of-type(2) button{
 	width: 160px;
 	height: 50px;
 	padding: 12px 0px;
+	display: block;
+	margin: 0px auto;
+	position: relative;
+	bottom: 5em;
+}
 
+#homepagina main ul:first-of-type a{
+	text-decoration: none;
 }
 
 /* tweede deel main */
-main ul:nth-of-type(2) {
+#homepagina main ul:nth-of-type(2) {
     overflow: auto;
     white-space:nowrap;
     padding: 10px;
 }
 
-main ul:nth-of-type(2) li{
+#homepagina main ul:nth-of-type(2) li{
 	display: inline-block;
 	width: 45%;
 	margin: 25px 5px 0 0;
 }
 
-main ul:nth-of-type(2) img{
+#homepagina main ul:nth-of-type(2) img{
 	width: 100%;
 }
 
-main ul:nth-of-type(2) h3{
+#homepagina main ul:nth-of-type(2) h3{
 	font-size: 13px;
 	font-family: "Helvetica Neue";
 	font-weight: 400;
@@ -119,15 +131,15 @@ main ul:nth-of-type(2) h3{
 
 
 /* vierde deel main */
-main ul:nth-of-type(3) li{
+#homepagina main ul:nth-of-type(3) li{
 	position: relative;
 }
 
-main ul:nth-of-type(3) img{
+#homepagina main ul:nth-of-type(3) img{
 	width: 100%;
 }
 
-main ul:nth-of-type(3) li p{
+#homepagina main ul:nth-of-type(3) li p{
 	position: absolute;
   	top: 1em;
   	padding: 0px 70px;
@@ -140,7 +152,7 @@ main ul:nth-of-type(3) li p{
 	letter-spacing: 1px;
 }
 
-main ul:nth-of-type(3) li a button{
+#homepagina main ul:nth-of-type(3) li a button{
 	position: absolute;
   	bottom: 1em;
 	left: 23%;
@@ -154,7 +166,7 @@ main ul:nth-of-type(3) li a button{
 }
 
 /* laatste deel main */
-main section:last-of-type h2{
+#homepagina main section:last-of-type h2{
 	font-size: 34px;
 	font-family: "Helvetica Neue";
 	font-weight: bold;
@@ -162,18 +174,18 @@ main section:last-of-type h2{
 	margin-top: 30px;
 }
 
-main section:last-of-type p{
+#homepagina main section:last-of-type p{
 	font-size: 20px;
 	font-family: "Helvetica Neue";
 	text-align: center;
 	padding: 20px 16px;
 }
 
-main section:last-of-type a{
+#homepagina main section:last-of-type a{
 	text-decoration: none;
 }
 
-main section:last-of-type button{
+#homepagina main section:last-of-type button{
   	font-family: "Helvetica Neue";
 	background-color: black;
 	color: white;
@@ -186,7 +198,7 @@ main section:last-of-type button{
 	margin: 0px auto;
 }
 
-main section:last-of-type .gridwrapper{
+#homepagina main section:last-of-type .gridwrapper{
 	width: 90%;
 	margin: 0 auto;
 	display: grid;
@@ -196,26 +208,33 @@ main section:last-of-type .gridwrapper{
 	padding-bottom: 40px ;
 }
 
-main .gridwrapper img{
+#homepagina main .gridwrapper img{
 	width: 100%;
 }
 
 
 /* footer */
-footer{
+#homepagina footer{
 	margin-top:20px;
 	background-color: #ffc0cb;
 }
 
-footer h2{
+#homepagina footer img:first-of-type{
+	width: 10%;
+	display: block;
+	margin: 0px auto;
+	padding-top: 10px;
+}
+
+#homepagina footer h2{
 	font-size: 24px;
 	font-family: "Helvetica Neue";
 	text-align: center;
 	padding: 0 30px;
-	padding-top: 20px;
+	padding-top: 10px;
 }
 
-footer p{
+#homepagina footer p:first-of-type{
 	font-size: 16px;
 	font-family: "Helvetica Neue";
 	text-align: center;
@@ -223,11 +242,11 @@ footer p{
 	margin: 20px 0;
 }
 
-footer a{
+#homepagina footer a{
 	text-decoration: none;
 }
 
-footer button{
+#homepagina footer button{
 	font-family: "Helvetica Neue";
 	border: 2px solid black;
 	background-color: white;
@@ -240,7 +259,7 @@ footer button{
 	margin-bottom: 40px;
 }
 
-footer ul li{
+#homepagina footer ul li{
 	font-size: 20px;
 	font-family: "Helvetica Neue";
 	font-weight: bold;
@@ -250,25 +269,73 @@ footer ul li{
 	margin: 0px auto;
 }
 
+#homepagina footer p:last-of-type{
+	font-family: "Helvetica Neue";
+	font-weight: 400;
+	text-align: center;
+	font-size: 0.8em;
+	color: #808080;
+	padding: 0px 18px;
+	padding-bottom: 10px;
+}
 
 
 /* 2e pagina */
 
-.mainproductpagina img{
+#productpagina .mainproductpagina section:first-of-type img{
 	width: 100%;
 	padding: 20px;
 	margin-top: -40px;
 }
 
-.mainproductpagina h2{
+#productpagina .mainproductpagina section:first-of-type h2{
 	font-family: "Helvetica Neue";
 	font-size: 1.2em;
 	margin-left: 10px;
 }
 
-.mainproductpagina h2:nth-of-type(2){
+#productpagina .mainproductpagina section:first-of-type h2:nth-of-type(2){
 	font-weight: normal;
 }
+
+#productpagina .mainproductpagina section:first-of-type p, #productpagina .mainproductpagina section:first-of-type a:first-of-type{
+	font-family: "Helvetica Neue";
+	font-size: 0.8em;
+	font-weight: 500;
+	margin: 10px 0px 10px 10px;
+	color: black;
+}
+
+
+#productpagina .mainproductpagina section:first-of-type .maatbutton{
+	background-color: white;
+	width: 48px;
+	height: 48px;
+}
+
+#productpagina .mainproductpagina section:first-of-type .maattabel{
+	width: 90%;
+	margin-left: 10px;
+}
+
+#productpagina .mainproductpagina section:first-of-type .maattabel li{
+	display: inline-block;
+	padding-right: 4px;
+	padding-bottom: 10px;
+}
+
+#productpagina .mainproductpagina section:first-of-type .addtobag {
+	width: 95%;
+	height: 50px;
+	display: block;
+	margin: 0px auto;
+	margin-top: 10px;
+}
+
+#productpagina .mainproductpagina section:first-of-type a:last-of-type{
+	text-decoration: none;
+}
+
 
 
 
