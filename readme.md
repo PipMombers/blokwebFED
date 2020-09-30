@@ -38,9 +38,10 @@ Wel had ik nog wat problemen met het css bestand voor 2 verschillende pagina's g
 
 **Screenshot(s):**
 
-![screenshot(s) van hoe ver je bent](images/voortgang2a.jpg)
+<!-- ![screenshot(s) van hoe ver je bent](images/voortgang2a.jpg)
 ![screenshot(s) van hoe ver je bent](images/voortgang2b.jpg)
-![screenshot(s) van hoe ver je bent](images/voortgang2c.jpg)
+![screenshot(s) van hoe ver je bent](images/voortgang2c.jpg) -->
+![screenshot(s) van hoe ver je bent](images/voortgang2.jpg)
 
 
 ### Agenda voor meeting
