@@ -30,8 +30,27 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
 
+Ik heb het background-image probleem nu kunnen oplossen dus de knoppen zitten nu goed in het midden. De vaste navigatie bovenaan de pagina heb ik geprobeerd te veranderen maar vind het nog steeds niet goed genoeg. Ook ben ik begonnen aan de tweede pagina, tot nu toe gaat dat ook nog goed, en heb ik javascript werkend gekregen wat best wel snel goed verliep. 
+
+Wel had ik nog wat problemen met het css bestand voor 2 verschillende pagina's gebruiken, maar dat heb ik nu kunnen oplossen met het gebruiken van id's en classes dus hoop dat dat goed is.
+
+**Screenshot(s):**
+
+![screenshot(s) van hoe ver je bent](images/voortgang2a.jpg)
+![screenshot(s) van hoe ver je bent](images/voortgang2b.jpg)
+![screenshot(s) van hoe ver je bent](images/voortgang2c.jpg)
+
+
+### Agenda voor meeting
+
+- Boven navigatie nog steeds niet helemaal goed
+- Kleurenlijstje tweede pagina lukt niet
+- het description stukje op de tweede pagina aanpakken
+
+
+### Verslag van meeting
 
 
 ## Voortgang 1 (week 3)
@@ -63,7 +82,7 @@ De navigatie kan ik beter verdelen in groepjes. Dus de elementen die meer aan de
 
 Het responsive gedeelte wordt blijkbaar nog in de les besproken dus dat heb ik voor nu nog maar even gelaten. 
 
-En verder moet ik nog gaan kijken naar waar ik Javascript wil gaan toepassen, dat was ik voor de voortgang even vergeten ;). 
+En verder moet ik nog gaan kijken naar waar ik Javascript wil gaan toepassen, dat was ik voor deze voortgang even vergeten ;). 
 
 
 
