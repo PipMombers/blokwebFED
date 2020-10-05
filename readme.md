@@ -38,9 +38,6 @@ Wel had ik nog wat problemen met het css bestand voor 2 verschillende pagina's g
 
 **Screenshot(s):**
 
-<!-- ![screenshot(s) van hoe ver je bent](images/voortgang2a.jpg)
-![screenshot(s) van hoe ver je bent](images/voortgang2b.jpg)
-![screenshot(s) van hoe ver je bent](images/voortgang2c.jpg) -->
 ![screenshot(s) van hoe ver je bent](images/voortgang2.jpg)
 
 
@@ -49,9 +46,17 @@ Wel had ik nog wat problemen met het css bestand voor 2 verschillende pagina's g
 - Boven navigatie nog steeds niet helemaal goed
 - Kleurenlijstje tweede pagina lukt niet
 - het description stukje op de tweede pagina aanpakken
+- streep door een maat
 
 
 ### Verslag van meeting
+De studentassistent gaf aan dat ik goed bezig was en op schema zat. Daar was ik erg blij mee. Ook gaf hij aan dat ik op dit moment iets minder hoef te focussen op de exacte vormgeving en meer nu met animaties, responsive enz. bezig kan zijn. 
+
+De kleuren/stof rondjes moet ik proberen met flexbox en het description stukje met buttons en gewone tekst (javascript, dus werkend pas als ik er tijd voor heb). 
+
+Verder om de html nog wat netter te maken gaf die aan om wat meer sections te gebruiken zodat het beter als een 'groep' werkt, en meer comment tags toevoegen om het ook voor mijzelf wat overzichtelijker te houden. 
+
+Nu ga ik dus aan de slag met animaties en het responsive gedeelte. 9
 
 
 ## Voortgang 1 (week 3)

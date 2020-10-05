@@ -164,6 +164,24 @@ nav li {
 	bottom: 2em;
 }
 
+@keyframes buttonBeweging {
+  0% { 
+  	transform:rotate(5deg);
+  }
+  50% { 
+  	transform:rotate(-5deg); 
+   }
+  100% { 
+  	transform:rotate(5deg);
+  }
+}
+
+#homepagina main ul:first-of-type button:hover{
+	animation-name: buttonBeweging;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
 #homepagina main ul:first-of-type a{
 	text-decoration: none;
 }
@@ -280,15 +298,16 @@ nav li {
 
 /* vierde deel main */
 #homepagina main ul:nth-of-type(4){
+	background-image: url(../images/planetpower.jpg);
+	height: 340px;
 	margin-top: 20px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: relative;
 }
 
 #homepagina main ul:nth-of-type(4) li{
 	position: relative;
-}
-
-#homepagina main ul:nth-of-type(4) img{
-	width: 100%;
 }
 
 #homepagina main ul:nth-of-type(4) li p{
@@ -305,16 +324,21 @@ nav li {
 }
 
 #homepagina main ul:nth-of-type(4) li a button{
-	position: absolute;
-  	bottom: 1em;
-	left: 23%;
   	font-family: "Helvetica Neue";
 	background-color: white;
 	border: none;
 	font-size: 16px;
-	width: 176px;
-	height: 46px;
+	width: 160px;
+	height: 50px;
 	padding: 12px 0px;
+	display: block;
+	margin: 0px auto;
+	position: relative;
+	top: 16.5em;
+}
+
+#homepagina main ul:nth-of-type(4) li a{
+	text-decoration: none;
 }
 
 /* laatste deel main */
@@ -435,7 +459,8 @@ footer p:last-of-type{
 /* 2e pagina */
 
 /* section 1 */
-#productpagina .mainproductpagina section:first-of-type img{
+/* productfoto en info */
+#productpagina .mainproductpagina section:first-of-type .productpagina{
 	width: 100%;
 	padding: 20px;
 	margin-top: -40px;
@@ -451,6 +476,24 @@ footer p:last-of-type{
 	font-weight: normal;
 }
 
+
+/* kleur kiezen */
+#productpagina .mainproductpagina section:first-of-type ul:first-of-type{
+	margin: 10px 0px 0px 10px;
+}
+
+#productpagina .mainproductpagina section:first-of-type ul:first-of-type img{
+	width: 10%;
+	border-radius: 50%;
+}
+
+#productpagina .mainproductpagina section:first-of-type ul:first-of-type li{
+	display:inline;
+	padding-right: 20px;
+}
+
+
+/* select size & button */
 #productpagina .mainproductpagina section:first-of-type p, #productpagina .mainproductpagina section:first-of-type a:first-of-type{
 	font-family: "Helvetica Neue";
 	font-size: 0.8em;
@@ -458,16 +501,6 @@ footer p:last-of-type{
 	margin: 10px 0px 10px 10px;
 	color: black;
 }
-
-/*#productpagina .mainproductpagina section:first-of-type ul:first-of-type img{
-	width: 22%;
-	border-radius: 50%;
-}
-
-#productpagina .mainproductpagina section:first-of-type ul:first-of-type li{
-	display:inline;
-	padding-right: -60px;
-}*/
 
 #productpagina .mainproductpagina section:first-of-type .maatbutton{
 	background-color: white;
@@ -494,6 +527,11 @@ footer p:last-of-type{
 	display: block;
 	margin: 0px auto;
 	margin-top: 10px;
+	border: none;
+	background-color: #D2D6D8;
+	color: white;
+	font-size: 1.1em;
+	font-weight: bold;
 }
 
 #productpagina .mainproductpagina section:first-of-type a:last-of-type{
@@ -501,15 +539,32 @@ footer p:last-of-type{
 }
 
 /* section 2 */
+#productpagina .mainproductpagina section:nth-of-type(2) ul:first-of-type{
+	margin: 20px 0px 0px 10px;
+}
+
+#productpagina .mainproductpagina section:nth-of-type(2) ul:first-of-type li{
+	display: inline;
+}
+
+#productpagina .mainproductpagina section:nth-of-type(2) button{
+	height: 44px;
+	width: 31.5%;
+	text-align: center;
+	border: none;
+	background-color: #EFF0F3;
+	font-family: "Helvetica Neue";
+}
 
 #productpagina .mainproductpagina section:nth-of-type(2) p{
 	font-family: "Helvetica Neue";
 	font-size: 0.8em;
 	margin-left: 10px;
+	margin: 20px 0px 20px 10px;
 
 }
 
-#productpagina .mainproductpagina section:nth-of-type(2) ul{
+#productpagina .mainproductpagina section:nth-of-type(2) ul:last-of-type{
 	list-style-type: circle;
 	margin: 20px 0px;
 	font-family: "Helvetica Neue";
