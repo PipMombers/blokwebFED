@@ -90,7 +90,7 @@ nav li {
 /* eerste deel main */
 /* bron afbeeldingen: https://www.monki.com/en_eur/index.html */
 
-#homepagina main ul:first-of-type li:first-of-type div{
+#homepagina main section:first-of-type ul li:first-of-type div{
 	width: 100%;
 	height: 360px;
 	background-image: url(../images/monkifoto_1.jpg);
@@ -100,7 +100,7 @@ nav li {
 
 }
 
-#homepagina main ul:first-of-type li:last-of-type div{
+#homepagina main section:first-of-type ul li:last-of-type div{
 	width: 100%;
 	height: 360px;
 	background-image: url(../images/monkifoto_2.jpg);
@@ -111,12 +111,12 @@ nav li {
 	margin-bottom: -50px;
 }
 
-#homepagina main ul:first-of-type li:first-of-type, #homepagina main ul:first-of-type li:last-of-type{
+#homepagina main section:first-of-type ul li:first-of-type, #homepagina main section:first-of-type ul li:last-of-type{
 	position: relative;
 }
 
 
-#homepagina main ul:first-of-type li:first-of-type h2 {
+#homepagina main section:first-of-type ul li:first-of-type h2 {
 	position: absolute;
 	bottom: 5em;
 	color: white;
@@ -126,7 +126,7 @@ nav li {
 	text-align: center;
 }
 
-#homepagina main ul:first-of-type li:last-of-type h2{
+#homepagina main section:first-of-type ul li:last-of-type h2{
 	position: absolute;
 	bottom: 3.5em;
 	color: white;
@@ -136,7 +136,7 @@ nav li {
 	text-align: center;
 }
 
-#homepagina main ul:first-of-type li:first-of-type button{
+#homepagina main section:first-of-type ul li:first-of-type button{
 	font-family: "Helvetica Neue";
 	background-color: white;
 	border: none;
@@ -150,7 +150,7 @@ nav li {
 	bottom: 5em;
 }
 
-#homepagina main ul:first-of-type li:last-of-type .shopbutton{
+#homepagina main section:first-of-type ul li:last-of-type .shopbutton{
 	font-family: "Helvetica Neue";
 	background-color: white;
 	border: none;
@@ -176,34 +176,35 @@ nav li {
   }
 }
 
-#homepagina main ul:first-of-type button:hover{
+#homepagina main section:first-of-type ul button:hover{
 	animation-name: buttonBeweging;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
 }
 
-#homepagina main ul:first-of-type a{
+#homepagina main section:first-of-type ul a{
 	text-decoration: none;
 }
 
+
 /* tweede deel main */
-#homepagina main ul:nth-of-type(2) {
+#homepagina main section:nth-of-type(2) ul {
     overflow: auto;
     white-space:nowrap;
     padding: 10px;
 }
 
-#homepagina main ul:nth-of-type(2) li{
+#homepagina main section:nth-of-type(2) ul li{
 	display: inline-block;
 	width: 45%;
 	margin: 25px 5px 0 0;
 }
 
-#homepagina main ul:nth-of-type(2) img{
+#homepagina main section:nth-of-type(2) ul img{
 	width: 100%;
 }
 
-#homepagina main ul:nth-of-type(2) h3{
+#homepagina main section:nth-of-type(2) ul h3{
 	font-size: 13px;
 	font-family: "Helvetica Neue";
 	font-weight: 400;
@@ -212,12 +213,10 @@ nav li {
 }
 
 
-
-
 /* derde deel main */
 /* bron afbeeldingen: https://www.monki.com/en_eur/index.html */
 
-#homepagina main ul:nth-of-type(3) li:first-of-type div{
+#homepagina main section:nth-of-type(3) ul li:first-of-type div{
 	width: 100%;
 	height: 360px;
 	background-image: url(../images/monkifoto_3.jpg);
@@ -227,7 +226,7 @@ nav li {
 
 }
 
-#homepagina main ul:nth-of-type(3) li:last-of-type div{
+#homepagina main section:nth-of-type(3) ul li:last-of-type div{
 	width: 100%;
 	height: 360px;
 	background-image: url(../images/monkifoto_4.jpg);
@@ -238,12 +237,12 @@ nav li {
 	margin-bottom: -50px;
 }
 
-#homepagina main ul:nth-of-type(3) li:first-of-type, #homepagina main ul:nth-of-type(3) li:last-of-type{
+#homepagina main section:nth-of-type(3) ul li:first-of-type, #homepagina main section:nth-of-type(3) ul li:last-of-type{
 	position: relative;
 }
 
 
-#homepagina main ul:nth-of-type(3) li:first-of-type h2 {
+#homepagina main section:nth-of-type(3) ul li:first-of-type h2 {
 	position: absolute;
 	bottom: 5em;
 	color: white;
@@ -254,7 +253,7 @@ nav li {
 	text-align: center;
 }
 
-#homepagina main ul:nth-of-type(3) li:last-of-type h2{
+#homepagina main section:nth-of-type(3) ul li:last-of-type h2{
 	position: absolute;
 	bottom: 3.5em;
 	color: white;
@@ -264,7 +263,7 @@ nav li {
 	text-align: center;
 }
 
-#homepagina main ul:nth-of-type(3) li:first-of-type button{
+#homepagina main section:nth-of-type(3) ul li:first-of-type button{
 	font-family: "Helvetica Neue";
 	background-color: white;
 	border: none;
@@ -278,7 +277,7 @@ nav li {
 	bottom: 5em;
 }
 
-#homepagina main ul:nth-of-type(3) li:last-of-type .shopbutton{
+#homepagina main section:nth-of-type(3) ul li:last-of-type .shopbutton{
 	font-family: "Helvetica Neue";
 	background-color: white;
 	border: none;
@@ -292,12 +291,12 @@ nav li {
 	bottom: 2em;
 }
 
-#homepagina main ul:nth-of-type(3) a{
+#homepagina main section:nth-of-type(3) ul a{
 	text-decoration: none;
 }
 
 /* vierde deel main */
-#homepagina main ul:nth-of-type(4){
+#homepagina main section:nth-of-type(4) ul{
 	background-image: url(../images/planetpower.jpg);
 	height: 340px;
 	margin-top: 20px;
@@ -306,11 +305,11 @@ nav li {
 	position: relative;
 }
 
-#homepagina main ul:nth-of-type(4) li{
+#homepagina main section:nth-of-type(4) ul li{
 	position: relative;
 }
 
-#homepagina main ul:nth-of-type(4) li p{
+#homepagina main section:nth-of-type(4) ul li p{
 	position: absolute;
   	top: 1em;
   	padding: 0px 70px;
@@ -323,7 +322,7 @@ nav li {
 	letter-spacing: 1px;
 }
 
-#homepagina main ul:nth-of-type(4) li a button{
+#homepagina main section:nth-of-type(4) ul li a button{
   	font-family: "Helvetica Neue";
 	background-color: white;
 	border: none;
@@ -337,12 +336,12 @@ nav li {
 	top: 16.5em;
 }
 
-#homepagina main ul:nth-of-type(4) li a{
+#homepagina main section:nth-of-type(4) ul li a{
 	text-decoration: none;
 }
 
 /* laatste deel main */
-#homepagina main section h2{
+#homepagina main section:last-of-type h2{
 	font-size: 34px;
 	font-family: "Helvetica Neue";
 	font-weight: bold;
@@ -350,18 +349,18 @@ nav li {
 	margin-top: 30px;
 }
 
-#homepagina main section p{
+#homepagina main section:last-of-type p{
 	font-size: 20px;
 	font-family: "Helvetica Neue";
 	text-align: center;
 	padding: 20px 16px;
 }
 
-#homepagina main section a{
+#homepagina main section:last-of-type a{
 	text-decoration: none;
 }
 
-#homepagina main section button{
+#homepagina main section:last-of-type button{
   	font-family: "Helvetica Neue";
 	background-color: black;
 	color: white;
@@ -374,7 +373,7 @@ nav li {
 	margin: 0px auto;
 }
 
-#homepagina main section .gridwrapper{
+#homepagina main section:last-of-type .gridwrapper{
 	width: 90%;
 	margin: 0 auto;
 	display: grid;

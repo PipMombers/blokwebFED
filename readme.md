@@ -24,7 +24,24 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
+
+Ik heb deze week niet heel veel gedaan aan de website. Ik had mijn prioriteit even aan andere vakken gegeven. Wel heb ik nu alles in sections ingedeeld en zoveel mogelijk commentaar neergezet. 
+
+De kleurenrondjes netjes maken is mij nu wel gelukt en ik heb al een animatie kunnen toevoegen. 
+
+**Screenshot(s):**
+
+![screenshot(s) van hoe ver je bent](images/voortgang3.jpg)
+
+
+### Agenda voor meeting
+
+- 
+
+
+### Verslag van meeting
+
 
 
 
@@ -56,7 +73,7 @@ De kleuren/stof rondjes moet ik proberen met flexbox en het description stukje m
 
 Verder om de html nog wat netter te maken gaf die aan om wat meer sections te gebruiken zodat het beter als een 'groep' werkt, en meer comment tags toevoegen om het ook voor mijzelf wat overzichtelijker te houden. 
 
-Nu ga ik dus aan de slag met animaties en het responsive gedeelte. 9
+Nu ga ik dus aan de slag met animaties en het responsive gedeelte. 
 
 
 ## Voortgang 1 (week 3)
