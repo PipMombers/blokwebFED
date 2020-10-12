@@ -70,7 +70,6 @@ nav{
 
 nav img{
 	width: 90%;
-	padding-left: left;
 }
 
 nav ul{   
@@ -185,6 +184,7 @@ nav li {
 #homepagina main section:first-of-type ul a{
 	text-decoration: none;
 }
+
 
 
 /* tweede deel main */
@@ -597,9 +597,73 @@ footer p:last-of-type{
 	line-height: 1.5em;
 }
 
+#productpagina .mainproductpagina section:last-of-type ul{
+	overflow: auto;
+    white-space:nowrap;
+    padding: 10px;
+}
+
+#productpagina .mainproductpagina section:last-of-type ul li{
+	display: inline-block;
+	width: 45%;
+	margin-right: 5px;
+}
+
+#productpagina .mainproductpagina section:last-of-type ul img{
+	width: 100%;
+}
+
+
 #productpagina .mainproductpagina section:last-of-type h2:nth-of-type(3){
 	border: none;
 	font-size: 1.3em;
+}
+
+
+/* responsive */
+
+@media (min-width: 375px) and (max-width: 667px){
+
+	#homepagina main section:first-of-type ul li:first-of-type div, #homepagina main section:first-of-type ul li:last-of-type div, #homepagina main section:nth-of-type(3) ul li:first-of-type div, #homepagina main section:nth-of-type(3) ul li:last-of-type div{
+		height: 420px;
+	}
+
+	#homepagina main section:nth-of-type(4) ul{
+		height: 400px;
+	}
+
+	#homepagina main section:nth-of-type(4) ul li p{
+		font-size: 1.5em;
+		padding: 20px 50px 0px 50px;
+	}
+
+	#homepagina main section:last-of-type .gridwrapper{
+		grid-gap: 40px 10px;
+	}
+}
+
+@media (min-width: 414px) and (max-width: 736px){
+
+	#homepagina main section:first-of-type ul li:first-of-type div, #homepagina main section:first-of-type ul li:last-of-type div, #homepagina main section:nth-of-type(3) ul li:first-of-type div, #homepagina main section:nth-of-type(3) ul li:last-of-type div{
+		height: 450px;
+	}
+
+	#homepagina main section:nth-of-type(4) ul{
+		height: 440px;
+	}
+
+	#homepagina main section:nth-of-type(4) ul li a button{
+	font-size: 16px;
+	width: 240px;
+	height: 50px;
+	top: 20em;
+	}
+
+	#homepagina main section:last-of-type .gridwrapper{
+		grid-gap: 60px 10px;
+		padding-bottom: 70px;
+	}
+
 }
 
 
