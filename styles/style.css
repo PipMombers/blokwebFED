@@ -664,6 +664,14 @@ footer p:last-of-type{
 		padding-bottom: 70px;
 	}
 
+	#homepagina main section:nth-of-type(2) ul {
+    padding: 0px 30px 20px 20px;
+	}
+
+	#homepagina main section:nth-of-type(2) ul h3{
+	font-size: 1em;
+	}
+
 }
 
 
