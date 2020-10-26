@@ -1,22 +1,34 @@
 // JavaScript Document
 
+// Hamburger menu
 var menuIcon = document.querySelector('#hamburgermenu');
-var hetMenu = document.querySelector("#menu");
-var wegMenu = document.querySelector("#menu h2")
+var hetMenu = document.querySelector('#menu');
+var deNav = document.querySelector('nav')
 
 menuIcon.addEventListener("click", menuLatenZien);
 
 function menuLatenZien () {
 
-	hetMenu.classList.add("toonmenu");
-
+	hetMenu.classList.toggle("toonmenu");
+	deNav.classList.toggle("toonnavigatie");
 }
 
-wegMenu.addEventListener("click", menuWegKlikken);
+// Popup 
 
-function menuWegKlikken () {
-	hetMenu.classList.remove
-	("toonmenu");
+var kruisIcon = document.querySelector('#popupkruis');
+var dePopup = document.querySelector('#popup')
+var popupButton = document.querySelector('#openpopup')
+
+kruisIcon.addEventListener("click", popupWegKlikken);
+
+function popupWegKlikken () {
+	dePopup.classList.add("wegpopup");
+	popupButton.classList.add("toonpopupbutton")
 }
 
+popupButton.addEventListener("click", popupWeerOpen);
 
+function popupWeerOpen () {
+	dePopup.classList.remove("wegpopup");
+	popupButton.classList.remove("toonpopupbutton")
+}

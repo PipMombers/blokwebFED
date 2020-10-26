@@ -8,13 +8,14 @@
 html, body {
   height: 100%;
   margin: 0;
-  overflow: scroll
+  overflow: scroll;
 }
 
-@font-face {
-    font-family: "AvenirLTStd-Medium";
-    src: url("../fonts/AvenirLTStd-Medium.otf");
+a:focus, button:focus{
+	outline-width: 0;
+	border: 5px dotted purple;
 }
+
 
 /* hamburger menu (javascript deel) */
 #menu{
@@ -22,7 +23,7 @@ html, body {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	z-index: 100;
+	z-index: 1;
 	position: fixed;
 	visibility: hidden;
 }
@@ -31,18 +32,143 @@ html, body {
 	color: white;
 	font-family: "Helvetica Neue";
 	font-size: 3em;
-	float: right;
-	margin-right: 20px;
 }
 
 #menu.toonmenu{
 	visibility: visible;
 }
 
+#menu ul{
+	margin-top: 80px;
+}
+
+#menu li{
+	font-size: 1.8em;
+	font-family: "Helvetica Neue";
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	padding-bottom: 20px;
+	list-style-type: none;
+}
+
+#menu li:first-of-type{
+	animation-name: invliegenMenu;
+	animation-duration: 2s;
+}
+
+#menu li:nth-of-type(2){
+	animation-name: invliegenMenu;
+	animation-duration: 2.5s;
+}
+
+#menu li:nth-of-type(3){
+	animation-name: invliegenMenu;
+	animation-duration: 3s;
+}
+
+#menu li:last-of-type{
+	animation-name: invliegenMenu;
+	animation-duration: 3.5s;
+}
+
+@keyframes invliegenMenu {
+ 0%   { 
+ transform: translateX(-200%); 		
+ }
+ 100% { 
+ transform: translateX(0%); 
+ }
+}
+
+/* popup (javascript) */
+#popup{
+	visibility: visible;
+	width: 75%;
+	height: 8em;
+	background-color: white;
+	border: 3px solid transparent;
+    border-image: linear-gradient(to right, purple, pink);
+    border-image-slice: 1;
+	z-index: 200;
+	position: absolute; 
+  	left: 0; 
+  	right: 0; 
+  	margin-left: auto; 
+  	margin-right: auto;
+  	bottom: 2em;
+}
+
+#popup img{
+	width: 14%;
+	position: absolute;
+	right: 0;
+}
+
+#popup h4{
+	font-family: "Helvetica Neue";
+	text-align: center;
+	font-size: 0.9em;
+	font-weight: 500;
+	padding-top: 15px;
+}
+
+#popup p{
+	font-family: "Helvetica Neue";
+	text-align: center;
+	font-size: 0.7em;
+	font-weight: 500;
+	padding: 10px 20px 10px 20px;
+}
+
+#popup button{
+	font-family: "Helvetica Neue";
+	background-color: #806699;
+	border: none;
+	font-size: 0.7em;
+	color: white;
+	width: 90%;
+	height: 3em;
+	display: block;
+	margin: 0px auto;
+}
+
+#popup.wegpopup{
+	visibility: hidden;
+}
+
+#openpopup{
+	visibility: hidden;
+	width: 75%;
+	background-color: #806699;
+	z-index: 200;
+	position: absolute; 
+  	left: 0; 
+  	right: 0; 
+  	margin-left: auto; 
+  	margin-right: auto;
+  	bottom: 0;
+}
+
+#openpopup.toonpopupbutton{
+	visibility: visible;
+}
+
+#openpopup h3{
+	font-family: "Helvetica Neue";
+	color: white;
+	text-align: center;
+	padding: 10px 0px;
+	font-size: 0.8em;
+}
+
 /* Tekstdeel van de header */
 header{
 	background-color: #ffc0cb;
 	padding: 10px 50px;
+	transform: translateY(0%);
+	animation-name: invliegenHeader;
+	animation-duration: 2s;
 }
 
 header p{
@@ -57,6 +183,15 @@ header p a{
 	color: black;
 	text-decoration: none;
 	border-bottom: 2px solid black;
+}
+
+@keyframes invliegenHeader{
+	0%{	
+		transform: translateY(-100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
 }
 
 /* navigatie */
@@ -82,16 +217,21 @@ nav li {
   flex-grow: 1;
 }
 
+nav.toonnavigatie{
+    margin-top: -70px;
+    background-color: transparent;
+
+}
+
 .logo{
 	width: 75%;
 }
 
 /* eerste deel main */
-/* bron afbeeldingen: https://www.monki.com/en_eur/index.html */
 
 #homepagina main section:first-of-type ul li:first-of-type div{
 	width: 100%;
-	height: 360px;
+	height: 22em;
 	background-image: url(../images/monkifoto_1.jpg);
 	background-size: 70%;
 	background-repeat: no-repeat;
@@ -101,7 +241,7 @@ nav li {
 
 #homepagina main section:first-of-type ul li:last-of-type div{
 	width: 100%;
-	height: 360px;
+	height: 22em;
 	background-image: url(../images/monkifoto_2.jpg);
 	background-size: 70%;
 	background-repeat: no-repeat;
@@ -140,8 +280,8 @@ nav li {
 	background-color: white;
 	border: none;
 	font-size: 16px;
-	width: 160px;
-	height: 50px;
+	width: 10em;
+	height: 3em;
 	padding: 12px 0px;
 	display: block;
 	margin: 0px auto;
@@ -154,8 +294,8 @@ nav li {
 	background-color: white;
 	border: none;
 	font-size: 16px;
-	width: 160px;
-	height: 50px;
+	width: 10em;
+	height: 3em;
 	padding: 12px 0px;
 	display: block;
 	margin: 0px auto;
@@ -214,11 +354,10 @@ nav li {
 
 
 /* derde deel main */
-/* bron afbeeldingen: https://www.monki.com/en_eur/index.html */
 
 #homepagina main section:nth-of-type(3) ul li:first-of-type div{
 	width: 100%;
-	height: 360px;
+	height: 22em;
 	background-image: url(../images/monkifoto_3.jpg);
 	background-size: 70%;
 	background-repeat: no-repeat;
@@ -228,7 +367,7 @@ nav li {
 
 #homepagina main section:nth-of-type(3) ul li:last-of-type div{
 	width: 100%;
-	height: 360px;
+	height: 22em;
 	background-image: url(../images/monkifoto_4.jpg);
 	background-size: 70%;
 	background-repeat: no-repeat;
@@ -268,8 +407,8 @@ nav li {
 	background-color: white;
 	border: none;
 	font-size: 16px;
-	width: 160px;
-	height: 50px;
+	width: 10em;
+	height: 3em;
 	padding: 12px 0px;
 	display: block;
 	margin: 0px auto;
@@ -282,8 +421,8 @@ nav li {
 	background-color: white;
 	border: none;
 	font-size: 16px;
-	width: 160px;
-	height: 50px;
+	width: 10em;
+	height: 3em;
 	padding: 12px 0px;
 	display: block;
 	margin: 0px auto;
@@ -298,7 +437,7 @@ nav li {
 /* vierde deel main */
 #homepagina main section:nth-of-type(4) ul{
 	background-image: url(../images/planetpower.jpg);
-	height: 340px;
+	height: 21.1em;
 	margin-top: 20px;
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -327,8 +466,8 @@ nav li {
 	background-color: white;
 	border: none;
 	font-size: 16px;
-	width: 160px;
-	height: 50px;
+	width: 10em;
+	height: 3em;
 	padding: 12px 0px;
 	display: block;
 	margin: 0px auto;
@@ -366,8 +505,8 @@ nav li {
 	color: white;
 	border: none;
 	font-size: 16px;
-	width: 176px;
-	height: 46px;
+	width: 11em;
+    height: 2.8em;
 	padding: 12px 0px;
 	display: block;
 	margin: 0px auto;
@@ -377,9 +516,9 @@ nav li {
 	width: 90%;
 	margin: 0 auto;
 	display: grid;
-	grid-auto-rows: 135px;
+	grid-auto-rows: 8.4em;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 15px 8px;
+	grid-gap: 1em 0.5em;
 	padding-bottom: 40px ;
 }
 
@@ -426,8 +565,8 @@ footer button{
 	border: 2px solid black;
 	background-color: white;
 	font-size: 16px;
-	width: 176px;
-	height: 46px;
+	width: 11em;
+    height: 2.8em;
 	padding: 12px 0px;
 	display: block;
 	margin: 0px auto;
@@ -459,10 +598,13 @@ footer p:last-of-type{
 
 /* section 1 */
 /* productfoto en info */
-#productpagina .mainproductpagina section:first-of-type .productpagina{
+#productpagina .mainproductpagina .productfoto{
 	width: 100%;
-	padding: 20px;
-	margin-top: -40px;
+	height: 22em;
+	background-image: url(../images/productmodel.jpg);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 #productpagina .mainproductpagina section:first-of-type h2{
@@ -482,7 +624,8 @@ footer p:last-of-type{
 }
 
 #productpagina .mainproductpagina section:first-of-type ul:first-of-type img{
-	width: 10%;
+	width: 2em;
+	height: 2em;
 	border-radius: 50%;
 }
 
@@ -503,8 +646,8 @@ footer p:last-of-type{
 
 #productpagina .mainproductpagina section:first-of-type .maatbutton{
 	background-color: white;
-	width: 48px;
-	height: 48px;
+	width: 3.5em;
+	height: 3.5em;
 
 }
 
@@ -522,7 +665,7 @@ footer p:last-of-type{
 
 #productpagina .mainproductpagina section:first-of-type .addtobag {
 	width: 95%;
-	height: 50px;
+	height: 3em;
 	display: block;
 	margin: 0px auto;
 	margin-top: 10px;
@@ -547,7 +690,7 @@ footer p:last-of-type{
 }
 
 #productpagina .mainproductpagina section:nth-of-type(2) button{
-	height: 44px;
+	height: 3.5em;
 	width: 31.5%;
 	text-align: center;
 	border: none;
@@ -564,12 +707,12 @@ footer p:last-of-type{
 }
 
 #productpagina .mainproductpagina section:nth-of-type(2) ul:last-of-type{
-	list-style-type: circle;
 	margin: 20px 0px;
 	font-family: "Helvetica Neue";
 	font-size: 0.8em;
 	margin-left: 10px;
 }
+
 
 /* section 3 */
 
@@ -625,11 +768,11 @@ footer p:last-of-type{
 @media (min-width: 375px) and (max-width: 667px){
 
 	#homepagina main section:first-of-type ul li:first-of-type div, #homepagina main section:first-of-type ul li:last-of-type div, #homepagina main section:nth-of-type(3) ul li:first-of-type div, #homepagina main section:nth-of-type(3) ul li:last-of-type div{
-		height: 420px;
+		height: 26.2em;
 	}
 
 	#homepagina main section:nth-of-type(4) ul{
-		height: 400px;
+		height: 25em;
 	}
 
 	#homepagina main section:nth-of-type(4) ul li p{
@@ -638,29 +781,29 @@ footer p:last-of-type{
 	}
 
 	#homepagina main section:last-of-type .gridwrapper{
-		grid-gap: 40px 10px;
+		grid-gap: 2.5em 0.6em;
 	}
 }
 
 @media (min-width: 414px) and (max-width: 736px){
 
 	#homepagina main section:first-of-type ul li:first-of-type div, #homepagina main section:first-of-type ul li:last-of-type div, #homepagina main section:nth-of-type(3) ul li:first-of-type div, #homepagina main section:nth-of-type(3) ul li:last-of-type div{
-		height: 450px;
+		height: 28.1em;
 	}
 
 	#homepagina main section:nth-of-type(4) ul{
-		height: 440px;
+		height: 28.1em;
 	}
 
 	#homepagina main section:nth-of-type(4) ul li a button{
-	font-size: 16px;
-	width: 240px;
-	height: 50px;
+	font-size: 1em;
+	width: 15em;
+	height: 3.1em;
 	top: 20em;
 	}
 
 	#homepagina main section:last-of-type .gridwrapper{
-		grid-gap: 60px 10px;
+		grid-gap: 3.7em 0.6em;
 		padding-bottom: 70px;
 	}
 
