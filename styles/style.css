@@ -675,7 +675,7 @@ footer p:last-of-type{
 	font-weight: bold;
 }
 
-#addtobag.toevoeginganimatie{
+#productpagina .mainproductpagina section:first-of-type #addtobag.toevoeginganimatie{
 	animation-name: addButtonBeweging ;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
