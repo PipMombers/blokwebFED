@@ -42,7 +42,7 @@ var addButton = document.querySelector('#addtobag');
 button.addEventListener("click", addButtonActief);
 
 function addButtonActief () {
-	addButton.classList.add("toevoeginganimatie");
+	addButton.classList.toggle("toevoeginganimatie");
 }
 
 // innerHTML

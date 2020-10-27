@@ -15,11 +15,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Ik vond de animaties werkend krijgen nog best wel lastig. Ook omdat de hover niet echt werkt bij het inspecteren en ik dus steeds het alleen kon testen op desktop versie waar alles niet responsive was. Ik heb een paar dingen niet helemaal goed werken gekregen zoals de roze header bovenin en het description stukje maar het werk half in ieder geval dus heb er wel mee kunnen experimenteren. 
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+![screenshot(s) van je eindresultaat](images/eindfoto1.jpg)
+![screenshot(s) van je eindresultaat](images/eindfoto2.jpg)
+![screenshot(s) van je eindresultaat](images/eindfoto3.jpg)
 
 
 
