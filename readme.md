@@ -8,6 +8,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Bronnenlijst
 1. https://www.monki.com/en_eur/index.html
 2. https://www.geeksforgeeks.org/gradient-borders/
+3. https://codepen.io/HowToDevCode/pen/ozbWKN?editors=0010
+4. https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_innerhtml
 
 
 
@@ -41,6 +43,7 @@ De kleurenrondjes netjes maken is mij nu wel gelukt en ik heb al een animatie ku
 
 ### Verslag van meeting
 
+Ik kan voor het description stukje naar innerhtml om de tekst te veranderen. Ik moet nu vooral de website nog responsive maken voor mobiel en wat meer animaties toevoegen. 
 
 
 

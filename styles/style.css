@@ -52,6 +52,10 @@ a:focus, button:focus{
 	list-style-type: none;
 }
 
+#menu li:hover{
+	color: black;
+}
+
 #menu li:first-of-type{
 	animation-name: invliegenMenu;
 	animation-duration: 2s;
@@ -222,11 +226,6 @@ nav.toonnavigatie{
     background-color: transparent;
 
 }
-
-.logo{
-	width: 75%;
-}
-
 /* eerste deel main */
 
 #homepagina main section:first-of-type ul li:first-of-type div{
@@ -663,7 +662,7 @@ footer p:last-of-type{
 
 }
 
-#productpagina .mainproductpagina section:first-of-type .addtobag {
+#productpagina .mainproductpagina section:first-of-type #addtobag {
 	width: 95%;
 	height: 3em;
 	display: block;
@@ -674,6 +673,27 @@ footer p:last-of-type{
 	color: white;
 	font-size: 1.1em;
 	font-weight: bold;
+}
+
+#addtobag.toevoeginganimatie{
+	animation-name: addButtonBeweging ;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes addButtonBeweging {
+  0% { 
+  	background-color: purple;
+  	width: 95%;
+  }
+  50% { 
+  	background-color: purple;
+  	width: 70%; 
+   }
+  100% { 
+  	background-color: purple;
+  	width: 95%;
+  }
 }
 
 #productpagina .mainproductpagina section:first-of-type a:last-of-type{
@@ -712,6 +732,13 @@ footer p:last-of-type{
 	font-size: 0.8em;
 	margin-left: 10px;
 }
+
+#productpagina .mainproductpagina section:nth-of-type(2) button:focus, #productpagina .mainproductpagina section:nth-of-type(2) button.active{
+	background-color: white;
+	color: black;
+	border-top: 2px solid purple;
+}
+
 
 
 /* section 3 */
@@ -767,7 +794,7 @@ footer p:last-of-type{
 
 @media (min-width: 375px) and (max-width: 667px){
 
-	#homepagina main section:first-of-type ul li:first-of-type div, #homepagina main section:first-of-type ul li:last-of-type div, #homepagina main section:nth-of-type(3) ul li:first-of-type div, #homepagina main section:nth-of-type(3) ul li:last-of-type div{
+	#homepagina main section:first-of-type ul li:first-of-type div, #homepagina main section:first-of-type ul li:last-of-type div, #homepagina main section:nth-of-type(3) ul li:first-of-type div, #homepagina main section:nth-of-type(3) ul li:last-of-type div, #productpagina .mainproductpagina .productfoto{
 		height: 26.2em;
 	}
 
@@ -787,7 +814,7 @@ footer p:last-of-type{
 
 @media (min-width: 414px) and (max-width: 736px){
 
-	#homepagina main section:first-of-type ul li:first-of-type div, #homepagina main section:first-of-type ul li:last-of-type div, #homepagina main section:nth-of-type(3) ul li:first-of-type div, #homepagina main section:nth-of-type(3) ul li:last-of-type div{
+	#homepagina main section:first-of-type ul li:first-of-type div, #homepagina main section:first-of-type ul li:last-of-type div, #homepagina main section:nth-of-type(3) ul li:first-of-type div, #homepagina main section:nth-of-type(3) ul li:last-of-type div, #productpagina .mainproductpagina .productfoto{
 		height: 28.1em;
 	}
 

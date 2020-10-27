@@ -23,12 +23,48 @@ kruisIcon.addEventListener("click", popupWegKlikken);
 
 function popupWegKlikken () {
 	dePopup.classList.add("wegpopup");
-	popupButton.classList.add("toonpopupbutton")
+	popupButton.classList.add("toonpopupbutton");
 }
 
 popupButton.addEventListener("click", popupWeerOpen);
 
 function popupWeerOpen () {
 	dePopup.classList.remove("wegpopup");
-	popupButton.classList.remove("toonpopupbutton")
+	popupButton.classList.remove("toonpopupbutton");
 }
+
+
+// addtobag actief
+
+var button = document.querySelector('.maatbutton');
+var addButton = document.querySelector('#addtobag');
+
+button.addEventListener("click", addButtonActief);
+
+function addButtonActief () {
+	addButton.classList.add("toevoeginganimatie");
+}
+
+// innerHTML
+
+var descriptionKnop = document.querySelector('.toondescription')
+var deliveryKnop = document.querySelector('.toondelivery');
+var detailsKnop = document.querySelector('.toondetails')
+
+descriptionKnop.addEventListener("click", showDescriptionStukje);
+deliveryKnop.addEventListener("click", showDeliveryStukje);
+detailsKnop.addEventListener("click", showDetailsStukje);
+
+function showDescriptionStukje () {
+	document.getElementById("informatietekst").innerHTML = "Description";
+}
+
+function showDeliveryStukje () {
+	document.getElementById("informatietekst").innerHTML = "Delivery";
+}
+
+function showDetailsStukje () {
+	document.getElementById("informatietekst").innerHTML = "Details";
+}
+
+
